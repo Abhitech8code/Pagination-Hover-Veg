@@ -1,0 +1,51 @@
+body {
+    font-family: sans-serif;
+    background-color: black;
+}
+
+h1 {
+    color: wheat;
+    font-family: cursive;
+    text-align: center;
+}
+.veggie-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out ;
+}
+.veggie-img:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 15px;
+}
+button {
+    padding: 8px 16px;
+    background-color: wheat;
+    color: black;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+}
+button:hover {
+    background-color: black;
+    color: wheat;
+    border: 1px solid white;
+}
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
